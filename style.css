@@ -5,3 +5,33 @@ body {
 .centered {
 	text-align: center;
 }
+
+.column-1 {
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+.column-2 {
+	float: right;
+	width: 50%;
+	text-align: left;
+}
+
+.img-1-text {
+	margin-bottom: 100px;
+}
+
+.img-2-text {
+	margin-bottom: 100px;
+}
+
+.Acknowledgements {
+    text-align: center;
+    font-size: 24px;
+}
+
+.sources {
+	text-align: left;
+	font-size: 18px;
+}

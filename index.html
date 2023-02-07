@@ -14,105 +14,144 @@
 
 <h1 class="centered">hw-03: Interactive Webpage, and Marks & Channels</h1>
 
+<div> 
+    <!-- column 1 -->
+    <div class="column-1">
+        <img src="img/vis1.png" class="centered">
+        <img src="img/vis2.png" class="centered">
+    </div>
+</div>
+
 <div>
-        
-        
-        <!-- column 1 -->
-        <div style="float:left; width:50%;">
-            <div style="text-align: center;">
-         <img src="/Users/pratheek_mandalapu/Desktop/DS4200/hw-03-pratheek-jp-2/img/vis1.png" class="centered">
-            </div>
-            <div style="text-align: center;">
-         <img src="/Users/pratheek_mandalapu/Desktop/DS4200/hw-03-pratheek-jp-2/img/vis2.png" class="centered">
-            </div>
+    <!-- column 2 -->
+    <div class="column-2">
+        <div class="img-1-text">
+            <h2>
+                Marks
+            </h2>
+            <ul>
+                <li>Areas
+                    <ul>
+                        <li>This visualization contains areas since each state is represented with a 2D height and width</li>
+                    </ul>
+                </li>
+                <li>Lines
+                    <ul>
+                        <li>This visualization contains lines since 
+                        states with equal democratic and republican representation are depicted with diagonal blue and red lines</li>
+                    </ul>
+                </li>
+                <li>Points
+                    <ul>
+                        <li>This visualization contains points since Nebraska and Maine's electoral votes are depicted with 0D squares (area does not matter)</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>
+                Channels
+            </h2>
+
+            <ul>
+                <li>Position
+                    <ul>
+                        <li>Represents attribute of type horizontal as each candidate's Electoral Votes Needed to Win is represented with a horizontal meter</li>
+                        <li>This is a good mapping because</li>
+                    </ul>
+                </li>
+                <li>Color
+                    <ul>
+                        <li>Represents attribute of type blue & red to distinguish democrats and republican representation in the U.S</li>
+                        <li>This is a good mapping because</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>
+                Colormaps(s)
+            </h2>
+
+            <ul>
+                <li>Colormap 1
+                    <ul>
+                        <li>Represents atribute of type "Categorical"</li>
+                        <li>This is a good mapping because</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
 
-        <!-- column 2 -->
-        <div style="float:right; width:50%;">
+        <div class="img-2-text">
+            <h2>
+                Marks
+            </h2>
+            <ul>
+                <li>Points
+                    <ul>
+                        <li>This visualization contains points since each batted ball is represented by a 0D circle (area does not matter) on the heat map</li>
+                    </ul>
+                </li>
+                <li>Lines
+                    <ul>
+                        <li>This visualization contains lines since it uses horizontal lines to highlight which launch angles represent which types of balls</li>
+                    </ul>
+                </li>
+            </ul>
 
+            <h2>
+                Channels
+            </h2>
 
-    <div class="marks-channels">
+            <ul>
+                <li>Positon
+                    <ul>
+                        <li>Represents attribute of type both horizontally and vertically as it positions batted balls
+                        based on Launch angle (Vertical) and Exit velocity (Horizontal) on the heat map</li>
+                        <li>This is a good mapping because</li>
+                    </ul>
+                </li>
+                <li>Color
+                    <ul>
+                        <li>Represents attribute of type divergent as it uses two colors 
+                        to indicate the extreme ranges (Below average LWTS vs. Above average LWTS) with a neutral color to represent the average LWTS</li>
+                        <li>This is a good mapping because</li>
+                    </ul>
+                </li>
+            </ul>
 
-        
-        <h2>
-            Marks
-        </h2>
+            <h2>
+                Colormaps(s)
+            </h2>
 
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2
-                <ul>
-                  <li>Sub Item 1</li>
-                 <li>Sub Item 2</li>
-                 </ul>
-            </li>
-            <li>Item 3</li>
-        </ul>
-
-        <h2>
-            Channels
-        </h2>
-
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2
-                <ul>
-                  <li>Sub Item 1</li>
-                 <li>Sub Item 2</li>
-                 </ul>
-            </li>
-            <li>Item 3</li>
-        </ul>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-
-
-        <h2>
-            Colormapss
-        </h2>
-
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2
-                <ul>
-                  <li>Sub Item 1</li>
-                 <li>Sub Item 2</li>
-                 </ul>
-            </li>
-            <li>Item 3</li>
-        </ul>
-
-
-        
-    </div>
-
-         
+            <ul>
+                <li>Colormap 1
+                    <ul>
+                        <li>Represents atribute of type "Divergent"</li>
+                        <li>This is a good mapping because</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-
-
-
-
-
     </div>
+</div>
 
+
+<div>
+    <!-- Pt.4 Acknowledgments -->
+    <h1 class="Acknowledgements">
+        Acknowledgements
+        <div class="sources">
+            <ul>
+                <li>
+                    <a href="https://amosca01.github.io/DS4200-S23/slides/05-marks-channels.pdf">Lecture 5 Slides</a>
+                </li>
+                <li>
+                    <a href="https://amosca01.github.io/DS4200-S23/slides/06-perception-color-js.pdf">Lecture 6 Slides</a>
+                </li>
+            </ul>
+        </div>
+    </h1>
+</div>
 
 </body>
 
