@@ -1,61 +1,21 @@
-//print
-console.log("hello world");
+// sets count to 1
+let count = 1;
 
-// variables
+// changes color of text when button is clicked
+function changeText() {
 
-// constants
-const myCourse = "DS4200";
-console.log(myCourse);
+	// the text within the right column of the page
+	let text = document.getElementById("text");
 
-let season = "Winter"
-console.log(season);
+	// determines if count is even or odd
+	if (count % 2 === 0) {
+		// when count is even, color is black
+		text.style.color = "black";
+	} else {
+		// when count is odd, color is red
+		text.style.color = "red";
+	}
 
-season = "Spring";
-console.log(season);
-
-// types
-console.log(typeof(season));
-
-let hwDue = true;
-console.log(typeof(hwDue));
-
-let faveNum = 45;
-console.log(typeof(faveNum));
-
-// loosely types language
-faveNum = "six";
-console.log(typeof(faveNum));
-
-// functions
-function tenTimes(num) {
-	let result = num * 10;
-	return result;
-}
-
-let ans = tenTimes(45);
-console.log(ans);
-
-// button function
-// function buttonClicked() {
-//	console.log("button was clicked!");
-
-//	let newText = "Button was clicked!"
-
-	// select the element
-//	let buttonDiv = document.getElementById("button-div");
-
-//	buttonDiv.innerHTML = newText;
-//}
-
-// sets count to 0
-let count = 0;
-
-// updates count
-function buttonCount() {
-	
-	count++
-
-	let buttonDiv = document.getElementById("button-div");
-
-	buttonDiv.innerHTML = "Number of times button clicked: " + count;
+	// adds 1 to the count after each click
+	count++;
 }

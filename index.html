@@ -5,156 +5,209 @@
     <meta charset=utf-8/>
     <link rel="stylesheet" href="style.css">
     <title>hw-03</title>
-
-
 </head>
-
 
 <body>
 
-<h1 class="centered">hw-03: Interactive Webpage, and Marks & Channels</h1>
-
-<div> 
-    <!-- column 1 -->
-    <div class="column-1">
-        <img src="img/vis1.png" class="centered">
-        <img src="img/vis2.png" class="centered">
-        <img src="img\customVisualization.png" class="centered">
-    </div>
-</div>
-
-<div>
-    <!-- column 2 -->
-    <div class="column-2">
-        <div class="img-1-text">
-            <h2>
-                Marks
-            </h2>
-            <ul>
-                <li>Areas
-                    <ul>
-                        <li>This visualization contains areas since each state is represented with a 2D height and width</li>
-                    </ul>
-                </li>
-                <li>Lines
-                    <ul>
-                        <li>This visualization contains lines since 
-                        states with equal democratic and republican representation are depicted with diagonal blue and red lines</li>
-                    </ul>
-                </li>
-                <li>Points
-                    <ul>
-                        <li>This visualization contains points since Nebraska and Maine's electoral votes are depicted with 0D squares (area does not matter)</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <h2>
-                Channels
-            </h2>
-
-            <ul>
-                <li>Position
-                    <ul>
-                        <li>Represents attribute of type horizontal as each candidate's Electoral Votes Needed to Win is represented with a horizontal meter</li>
-                        <li>This is a good mapping because</li>
-                    </ul>
-                </li>
-                <li>Color
-                    <ul>
-                        <li>Represents attribute of type blue & red to distinguish democrats and republican representation in the U.S</li>
-                        <li>This is a good mapping because</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <h2>
-                Colormaps(s)
-            </h2>
-
-            <ul>
-                <li>Colormap 1
-                    <ul>
-                        <li>Represents atribute of type "Categorical"</li>
-                        <li>This is a good mapping because</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-        <div class="img-2-text">
-            <h2>
-                Marks
-            </h2>
-            <ul>
-                <li>Points
-                    <ul>
-                        <li>This visualization contains points since each batted ball is represented by a 0D circle (area does not matter) on the heat map</li>
-                    </ul>
-                </li>
-                <li>Lines
-                    <ul>
-                        <li>This visualization contains lines since it uses horizontal lines to highlight which launch angles represent which types of balls</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <h2>
-                Channels
-            </h2>
-
-            <ul>
-                <li>Positon
-                    <ul>
-                        <li>Represents attribute of type both horizontally and vertically as it positions batted balls
-                        based on Launch angle (Vertical) and Exit velocity (Horizontal) on the heat map</li>
-                        <li>This is a good mapping because</li>
-                    </ul>
-                </li>
-                <li>Color
-                    <ul>
-                        <li>Represents attribute of type divergent as it uses two colors 
-                        to indicate the extreme ranges (Below average LWTS vs. Above average LWTS) with a neutral color to represent the average LWTS</li>
-                        <li>This is a good mapping because</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <h2>
-                Colormaps(s)
-            </h2>
-
-            <ul>
-                <li>Colormap 1
-                    <ul>
-                        <li>Represents atribute of type "Divergent"</li>
-                        <li>This is a good mapping because</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-
-<div>
-    <!-- Pt.4 Acknowledgments -->
-    <h1 class="Acknowledgements">
-        Acknowledgements
-        <div class="sources">
-            <ul>
-                <li>
-                    <a href="https://amosca01.github.io/DS4200-S23/slides/05-marks-channels.pdf">Lecture 5 Slides</a>
-                </li>
-                <li>
-                    <a href="https://amosca01.github.io/DS4200-S23/slides/06-perception-color-js.pdf">Lecture 6 Slides</a>
-                </li>
-            </ul>
-        </div>
+    <h1 class="centered">
+        hw-03: Interactive Webpage, and Marks & Channels
     </h1>
-</div>
 
-<script src="main.js"></script>
+    <div id="text">
+        <div class="container">
+            <div class="row">
+                <div class="left-column">
+                    <img src="img\vis1.png" class="image">
+                </div>
+                <div class="right-column">
+
+                    <h2>
+                        Marks
+                    </h2>
+                    <ul>
+                        <li>Areas
+                            <ul>
+                                <li>This visualization contains areas since each state is represented with a 2D height and width.</li>
+                                <li>This was a good choice because it is accurate, discernable, separable, and groups well. Specifically, the reader can easily understand that this is a political map (accurate). The levels of channels are easily discernable as the reader can differentiate between color and position. We can also see that channels exist integrally with each other and distant groups are easily inferable.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Points
+                            <ul>
+                                <li>This visualization contains points since Nebraska and Maine's electoral votes are depicted with 2D squares (area does not matter).</li>
+                                <li>This was a good choice because it is easily discernable from the rest of the map and does not confuse the reader. The colors are consistent to allow for easy grouping. 
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h2>
+                        Channels
+                    </h2>
+                    <ul>
+                        <li>Position
+                            <ul>
+                                <li>The amount of color on the slider communicates number of votes need to win.</li>
+                                <li>This was not a geat choice because it does not allow for strong accuracy. Although reading the numbers, a reader can understand votes needed to win, the color of the slider tells the opposite story. The color indicates that the democratic party is winning.</li>
+                            </ul>
+                        </li>
+                        <li>Color
+                            <ul>
+                                <li>Blue and red are used to represent the democratic and republican parties, respectively. In addition, a combination of blue and red are used to indicate that Nebraska had a combination of blue and red voters.</li>
+                                <li>This is a good choice the colors follow the existing colors of the two parties. Most readers would not have to read the title of the map to recognize that this refers to U.S. politics. It has a high degree of effectiveness and has visual-popout.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h2>
+                        Colormaps(s)
+                    </h2>
+                    <ul>
+                        <li>Categorical
+                            <ul>
+                                <li>This is a categorical color map because it classifies color into the two political parties.</li>
+                                <li>This is a good choice because it only uses colors previously associated with the political parties and does not confuse the reader. It saves space on the encoding as well because there is no need for a legend.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="left-column">
+                    <img src="img\vis2.png" class="image">
+                </div>
+                <div class="right-column">
+                    <h2>
+                        Marks
+                    </h2>
+                    <ul>
+                        <li>Points
+                            <ul>
+                                <li>This visualization contains points since each batted ball is represented by a 2D circle (area does not matter) on the heat map.</li>
+                                <li>This is good mapping since plotting every single batted ball allows the user to get a better sense of how many balls were hit at the different launch angles and exit velocities; creating a easily readable scatter.</li>
+                            </ul>
+                        </li>
+                        <li>Lines
+                            <ul>
+                                <li>This visualization contains lines since it uses horizontal lines to categorize which launch angles represent which types of balls.</li>
+                                <li>This is good mapping because it allows for easy grouping and is easily discernable.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2>
+                        Channels
+                    </h2>
+                    <ul>
+                        <li>Position
+                            <ul>
+                                <li>As a 2D plane, the the position of the marks communicates Launch angle (Vertical) and Exit velocity (Horizontal) on the heat map.</li>
+                                <li>This is a good mapping because the spatial placement is effective in communicating the efficacy of each mark. </li>
+                            </ul>
+                        </li>
+                        <li>Color
+                            <ul>
+                                <li>The color represents the scoring value of a ball.</li>
+                                <li>This is a good mapping because each color category is easily discernable from the other. Although nuances between the saturation of each hue is more difficult to see, the differences between "Below", "Avg." and "Above Avg." is distinguishable.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2>
+                        Colormaps(s)
+                    </h2>
+                    <ul>
+                        <li>Divergent
+                            <ul>
+                                <li>This is a divergent colormap as it uses two colors 
+                                to indicate the extreme ranges (Below average LWTS vs. Above average LWTS) with a neutral color to represent the average LWTS.</li>
+                                <li>This is a good choice because the reader understand the scale of LWTS that visualization is trying to communicate.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="left-column">
+                    <img src="img\customVisualization.png" class="image">
+                </div>
+                <div class="right-column">
+                    <h2>
+                        Marks
+                    </h2>
+                    <ul>
+                        <li>Areas
+                            <ul>
+                                <li>This visualization contains areas since each country is represented with a 2D height and width.</li>
+                                <li>This was a good choice because it is accurate, discernable, separable, and groups well. Specifically, the reader can easily understand that this is a world map (accurate). The levels of channels are easily discernable as the reader can differentiate between color and position. We can also see that channels exist integrally.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h2>
+                        Channels
+                    </h2>
+                    <ul>
+                        <li>Position
+                            <ul>
+                                <li>The spatial of the position of each country shows their relative distance from one another and communicates that this is a world map.</li>
+                                <li>This is good choice as it is the most accurate way of visualization a world map.</li>
+                            </ul>
+                        </li>
+                        <li>Color
+                            <ul>
+                                <li>The color represents the average happiness score of a country.</li>
+                                <li>This is a good mapping because the user can get all the information at once while also being able to differentiate between each country's happiness score. It is easy to understand the accuracy due to the changing saturation of the colors.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h2>
+                        Colormaps(s)
+                    </h2>
+                    <ul>
+                        <li>Sequential
+                            <ul>
+                                <li>This is a sequential colormap as it uses saturation to indicate the increasing or decreasing amount of happiness from one country to the next.</li>
+                                <li>This is a good choice because it categorizes the scale of happiness and allows the reader to discern whether a country's happiness score is low or high depending on saturation.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div>
+                        <button class="button" type="myButton" onClick="changeText()">
+                            Click to Change Text Color!
+                        </button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <!-- Pt.4 Acknowledgments -->
+        <h1 class="Acknowledgements">
+            Acknowledgements
+            <div class="sources">
+                <ul>
+                    <li>
+                        <a href="https://amosca01.github.io/DS4200-S23/slides/05-marks-channels.pdf">Lecture 5 Slides</a>
+                    </li>
+                    <li>
+                        <a href="https://amosca01.github.io/DS4200-S23/slides/06-perception-color-js.pdf">Lecture 6 Slides</a>
+                    </li>
+                    <li>
+                        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox Guide</a>
+                    </li>
+                    <li>
+                        <a href="https://www.kaggle.com/datasets/unsdsn/world-happiness">World Happiness Dataset</a>
+                    </li>
+                </ul>
+            </div>
+        </h1>
+    </div>
+
+    <script src="main.js"></script>
 
 </body>
 
